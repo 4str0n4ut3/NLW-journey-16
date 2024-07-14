@@ -6,6 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js"></script>
+  <script>
+    dayjs.locale('pt-br')
+  </script>
+
+
   <title>NLW journey</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -13,6 +20,23 @@
 <body>
 
   <form onsubmit="SalvarAtividade(event)">
+    <div>
+      <input type="text" placeholder="Qual a atividade?" name="atividade">
+    </div>
+
+    <div>
+      <select name="dia">
+        <option value="2024-07-01"> 01 de Julho</option>
+      </select>
+    </div>
+
+    <div>
+      <select name="hora">
+        <option value="10:35">10:35</option>
+      </select>
+    </div>
+    
+    <button >Salvar atividade</button>
   </form>
 
   <main>
